@@ -1,12 +1,13 @@
 <!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Política de Privacidade · Gameplay Moments</title><link rel="stylesheet" href="style.css"></head><body><main>
-<nav><a href="index.html">Início</a><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a></nav>
+<title>Política de Privacidade · Gameplay Moments</title><link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" href="icone.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="stylesheet" href="style.css"></head><body><main>
+<nav><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a></nav>
 <h1>Política de Privacidade</h1>
-<p class="muted">Última atualização: 2 de novembro de 2026 · <a href="#en">English summary</a></p>
+<p class="muted">Última atualização: 11 de novembro de 2026 · <a href="#en">English summary</a></p>
 <p>O app “Gameplay Moments” é uma ferramenta pessoal, executada no computador do dono do canal Gameplay Moments, usada somente para enviar vídeos do próprio canal ao YouTube e ao TikTok. Ele não é distribuído nem oferecido a outras pessoas.</p>
 <h2>Dados acessados</h2>
 <ul>
-<li><b>YouTube (Google):</b> permissão <code>youtube.upload</code>, usada apenas para enviar vídeos do canal como privados e aplicar a thumbnail.</li>
+<li><b>YouTube (Google):</b> permissão <code>youtube.upload</code>, usada para enviar vídeos do canal como privados e aplicar a thumbnail.</li>
+<li><b>YouTube (Google), somente leitura:</b> permissões <code>youtube.readonly</code> e <code>yt-analytics.readonly</code>, usadas apenas para mostrar ao dono, no painel do app, os números do próprio canal e dos próprios vídeos (inscritos, visualizações, desempenho) e conferir se um vídeo enviado continua no canal. O app não lê dados de outros canais nem de espectadores.</li>
 <li><b>TikTok:</b> permissões <code>user.info.basic</code> (identificador da conta) e <code>video.upload</code>, usadas apenas para enviar vídeos do canal como rascunho para a caixa de entrada do app.</li>
 </ul>
 <h2>Armazenamento</h2>
@@ -14,13 +15,13 @@
 <h2>Serviços de API do YouTube</h2>
 <p>Este app usa os <b>Serviços de API do YouTube</b>. Ao usá-lo, você concorda com os <a href="https://www.youtube.com/t/terms">Termos de Serviço do YouTube</a>. Os dados tratados por meio do YouTube estão sujeitos à <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>.</p>
 <h2>Exclusão de dados</h2>
-<p>O app não guarda dados de API do YouTube além do identificador dos vídeos enviados pelo próprio dono. Os tokens de acesso podem ser apagados a qualquer momento excluindo a pasta local <code>secrets/</code>; após a revogação do acesso, nenhum dado continua armazenado. Pedidos de exclusão podem ser enviados para o e-mail de contato abaixo e são atendidos em até 7 dias.</p>
+<p>O app guarda, no computador do dono, apenas o identificador dos vídeos enviados e uma cópia temporária dos números do próprio canal e dos próprios vídeos (arquivos na pasta local <code>data/</code>), atualizada de tempos em tempos e nunca enviada a terceiros. Os tokens de acesso podem ser apagados a qualquer momento excluindo a pasta local <code>secrets/</code>, e essa cópia dos números, excluindo os arquivos <code>canal-stats.json</code> e <code>video-stats.json</code> da pasta <code>data/</code>; após a revogação do acesso, nenhum dado continua armazenado. Pedidos de exclusão podem ser enviados para o e-mail de contato abaixo e são atendidos em até 7 dias.</p>
 <h2>Revogação</h2>
 <p>O acesso pode ser revogado a qualquer momento em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> (Google) e nas configurações de segurança da conta do TikTok (aplicativos autorizados). Ao revogar, os tokens locais deixam de funcionar e podem ser apagados.</p>
 <h2>Uso dos serviços de terceiros</h2>
 <p>O uso do YouTube segue os <a href="https://www.youtube.com/t/terms">Termos de Serviço do YouTube</a> e a <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>. O uso do TikTok segue os termos e a política de privacidade do TikTok.</p>
 <h2 id="en">English summary</h2>
-<p>“Gameplay Moments” is a private desktop tool used only by the owner of the Gameplay Moments channel to upload the channel's own videos. It uses <b>YouTube API Services</b> (scope <code>youtube.upload</code>) to upload videos as <b>private</b> and set thumbnails; by using it you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and data is handled under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. OAuth tokens are stored only on the owner's computer, never shared or sold. Access can be revoked at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>; deleting the local <code>secrets/</code> folder removes all stored tokens. Deletion requests: suporte.macontato@gmail.com.</p>
+<p>“Gameplay Moments” is a private desktop tool used only by the owner of the Gameplay Moments channel to upload the channel's own videos. It uses <b>YouTube API Services</b> (scopes <code>youtube.upload</code>, <code>youtube.readonly</code> and <code>yt-analytics.readonly</code>) to upload videos as <b>private</b>, set thumbnails and show the owner the statistics of the owner's own channel and videos (never other channels or viewers); by using it you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and data is handled under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. OAuth tokens are stored only on the owner's computer, never shared or sold. Access can be revoked at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>; deleting the local <code>secrets/</code> folder removes all stored tokens, and deleting <code>canal-stats.json</code> and <code>video-stats.json</code> from the local <code>data/</code> folder removes the cached statistics. Deletion requests: suporte.macontato@gmail.com.</p>
 <h2>Contato</h2>
 <p><a href="mailto:suporte.macontato@gmail.com">suporte.macontato@gmail.com</a></p>
 </main></body></html>
